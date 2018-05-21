@@ -1,35 +1,14 @@
-const express = require('express');
-const router = express.Router();
 
+// Dependencies
+var express = require('express');
+var router = express.Router();
 
-//get the list of museums form DB
+// Models
+var Product = require('../models/list');
 
-router.get('/museums/list_officers',function(req,res){
-    res.send({type:'GET'});
+// Routes
+Product.methods(['get', 'put', 'post', 'delete']);
+Product.register(router, '/museums/list_officers');
 
-});
-
-//add a new museums in DB
-
-router.post('/museums/list_officers',function(req,res){
-    res.send({type:'POST'});
-
-});
-
-//update a museum in the DB
-
-router.put('/museums/list_officers/:id',function(req,res){
-    res.send({type:'PUT'});
-
-});
-
-//delete a museum form the DB
-
-router.delete('/museums/list_officers/:id',function(req,res){
-    res.send({type:'DELETE'});
-
-});
-
+// Return router
 module.exports = router;
-
-

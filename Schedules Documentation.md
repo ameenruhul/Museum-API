@@ -21,7 +21,9 @@
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
+    Content: ` { { "_id": "5b655735af65a50b98c79a18", "address": "Jadugor Mor,Rajshahi", "open_time": "10.00am", "closed_time": "5.00pm", "visiting_days": "Sunday,Monday,Wednesday,Tuesday,Thursday", "upcoming_events": "Edul Azha", "upcoming_events_date": "23 August", "upcoming_workshop": "Know history,Create history", "upcoming_workshop_date": "10-09-2018", "ticket_price": "10 TK", "__v": 0 }
+
+
  
 * **Error Response:**
 

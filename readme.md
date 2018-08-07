@@ -1,11 +1,11 @@
-#CSE3112: Software Engineering Lab and CSE3162: Software Development Lab II --> The Museum API
+# CSE3112: Software Engineering Lab and CSE3162: Software Development Lab II --> The Museum API
 
 
 # Overview
 
 This is a API of the Museums of University of Rajshahi.This API can be accessed at localhost:3000/api/museums
 
-#Software Requirement Specification
+# Software Requirement Specification
 
 1. The API users can GET,UPDATE,DELETE,POST the list of museums(name,address of Rajshahi University.
 2. The API users can GET,UPDATE,DELETE,POST would find the history(name,estabished date,established by, architect,area,notable collections and about)  of every museum .
@@ -14,7 +14,7 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 5..The API users can GET,UPDATE,DELETE,POST the list of officers(name,position,office adress,email,phone(office),phone(res),salary,NID number and date of join).
 
 
-#API Documentation
+# API Documentation
 
 
 **Show List of Museums**
@@ -1184,7 +1184,7 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
     });
   ```
 
-#Contributer:
+# Contributer:
 This API is developed by  4 students of department Computer Science and Engineering,University of Rajshahi.
 (Group 2)
 1. Ayesha Sultana : 14225406

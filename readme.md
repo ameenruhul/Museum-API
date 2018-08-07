@@ -7,6 +7,10 @@
 This is a API of the Museums of University of Rajshahi.This API can be accessed at localhost:3000/api/museums
 Course Names and Course Codes: CSE3112: Software Engineering Lab and CSE3162: Software Development Lab II
 
+![m1](https://user-images.githubusercontent.com/28553170/43793050-3d5a7d74-9a9c-11e8-9891-2ff3eaf1f850.png)
+
+
+
 # Software Requirement Specification
 
 - [x]  The API users can GET,UPDATE,DELETE,POST the list of museums(name,address of Rajshahi University.

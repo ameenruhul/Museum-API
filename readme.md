@@ -1,17 +1,19 @@
-# CSE3112: Software Engineering Lab and CSE3162: Software Development Lab II --> The Museum API
+
+# The Museum API
 
 
 # Overview
 
 This is a API of the Museums of University of Rajshahi.This API can be accessed at localhost:3000/api/museums
+Course Names and Course Codes: CSE3112: Software Engineering Lab and CSE3162: Software Development Lab II
 
 # Software Requirement Specification
 
-1. The API users can GET,UPDATE,DELETE,POST the list of museums(name,address of Rajshahi University.
-2. The API users can GET,UPDATE,DELETE,POST would find the history(name,estabished date,established by, architect,area,notable collections and about)  of every museum .
-3. The API users can GET,UPDATE,DELETE,POST list of  collections(product name,product no,product type,product origin,donators adress and mobile numbers,product background,donate date) of every museum .
-4. The API users can GET,UPDATE,DELETE,POST Shedules(start time,end time,lunch break,visting days,upcoming events,workshop and ticket price)  of Events.
-5..The API users can GET,UPDATE,DELETE,POST the list of officers(name,position,office adress,email,phone(office),phone(res),salary,NID number and date of join).
+- [x]  The API users can GET,UPDATE,DELETE,POST the list of museums(name,address of Rajshahi University.
+- [x]  The API users can GET,UPDATE,DELETE,POST would find the history(name,estabished date,established by, architect,area,notable collections and about)  of every museum .
+- [x]  The API users can GET,UPDATE,DELETE,POST list of  collections(product name,product no,product type,product origin,donators adress and mobile numbers,product background,donate date) of every museum .
+- [x]  The API users can GET,UPDATE,DELETE,POST Shedules(start time,end time,lunch break,visting days,upcoming events,workshop and ticket price)  of Events.
+- [x]  The API users can GET,UPDATE,DELETE,POST the list of officers(name,position,office adress,email,phone(office),phone(res),salary,NID number and date of join).
 
 
 # API Documentation
@@ -42,19 +44,17 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
   * **Code:** 200 <br />
     **Content:**
       
-    {
+   
+ 
+   <dl>
   
-    {
-
     "_id": "5b655735af65a50b98c79a18",
     "name":"Varentra Research Museum",
     "address":Serushar Para, College Road, Boalia,Rajshahi"
+
+   </dl>
+   
     
-    }
-
-    }
-
-	
  
 * **Error Response:**
 
@@ -102,22 +102,15 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 * **Success Response:**
 
   * **Code:** 201 <br />
-    **Content:** `
-    { 
-       {
-    	 
-    {
-
+    **Content:** 
+  
+```
     "_id": "5b655735af65a50b98c79a18",
     "name":"Varentra Research Museum",
     "address":Serushar Para, College Road, Boalia,Rajshahi"
-    
-    }
+```    
 
-	
 
-    
-    }`
 
   * **Error Response:**
 
@@ -166,22 +159,17 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 * **Success Response:**
 
   * **Code:** 202 <br />
-    **Content:** `
-    { 
-     
-    {
+    **Content:** 
 
+  ```
     "_id": "5b655735af65a50b98c79a18",
     "name":"Varentra Research Museum",
     "address":Serushar Para, College Road, Boalia,Rajshahi"
-    
-    }
-
+  ```
 	
 
     
-    }`
-
+ 
     * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
@@ -269,16 +257,30 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 * **Success Response:**
 
   * **Code:** 200 <br />
-    Content: ` { { "_id": "5b655735af65a50b98c79a18", "address": "Jadugor Mor,Rajshahi", "open_time": "10.00am", "closed_time": "5.00pm", "visiting_days": "Sunday,Monday,Wednesday,Tuesday,Thursday", "upcoming_events": "Edul Azha", "upcoming_events_date": "23 August", "upcoming_workshop": "Know history,Create history", "upcoming_workshop_date": "10-09-2018", "ticket_price": "10 TK", "__v": 0 }
 
+    Content: ` 
+
+     ```
+       "_id": "5b655735af65a50b98c79a18", 
+       "address": "Jadugor Mor,Rajshahi", 
+       "open_time": "10.00am", 
+       "closed_time": "5.00pm",
+       "visiting_days": "Sunday,Monday,Wednesday,Tuesday,Thursday", 
+       "upcoming_events": "Edul Azha", 
+       "upcoming_events_date": "23 August", 
+       "upcoming_workshop": "Know history,Create history", 
+       "upcoming_workshop_date": "10-09-2018",
+        "ticket_price": "10 TK", "__v": 0 
+     ```
 
  
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-    **Content:** `
-    { 
-       {
+    **Content:** 
+   
+        
+ 
         "_id": "5b655735af65a50b98c79a18",
         "address": "Jadugor Mor,Rajshahi",
         "open_time": "10.00am",
@@ -290,9 +292,8 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
         "upcoming_workshop_date": "10-09-2018",
         "ticket_price": "10 TK",
         "__v": 0
-       }
-    
-    }`
+       
+      
 
 
 
@@ -493,7 +494,7 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
     **Content:**
       
         
-   	 {
+   	```
    	 "_id": "5b657fc9e8698e714bcab508",
    	 "official_name": "Varendra Research Museum ",
     	"established": "1910",
@@ -503,8 +504,8 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
     	"notable_collections": "Puthis of Ancient time",
     	"about": "largest museum of Bangladesh",
     	"__v": 0
-	}
-	
+
+	```
  
 * **Error Response:**
 
@@ -552,11 +553,12 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 * **Success Response:**
 
   * **Code:** 201 <br />
-    **Content:** `
-    { 
-        {
-   	 "_id": "5b657fc9e8698e714bcab508",
-   	 "official_name": "Varendra Research Museum ",
+    **Content:** 
+ 
+       ```
+   
+   	"_id": "5b657fc9e8698e714bcab508",
+   	"official_name": "Varendra Research Museum ",
     	"established": "1910",
     	"established_by": "Kumar Sarat",
     	"architect": "L.S. Charmaichel",
@@ -564,9 +566,8 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
     	"notable_collections": "Puthis of Ancient time",
     	"about": "largest museum of Bangladesh",
     	"__v": 0
-	}
-    
-    }`
+      
+      ```
 
   * **Error Response:**
 
@@ -615,11 +616,12 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 * **Success Response:**
 
   * **Code:** 202 <br />
-    **Content:** `
-    { 
-        {
-   	 "_id": "5b657fc9e8698e714bcab508",
-   	 "official_name": "Varendra Research Museum ",
+    **Content:** 
+    
+       ```
+
+   	"_id": "5b657fc9e8698e714bcab508",
+   	"official_name": "Varendra Research Museum ",
     	"established": "1910",
     	"established_by": "Kumar Sarat",
     	"architect": "L.S. Charmaichel",
@@ -627,9 +629,8 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
     	"notable_collections": "Puthis of Ancient time",
     	"about": "largest museum of Bangladesh",
     	"__v": 0
-	}
-    
-    }`
+
+       ```
 
     * **Error Response:**
 
@@ -720,20 +721,21 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
   * **Code:** 200 <br />
     **Content:**
       
-        
-   	 "_id": "5b656f7a9ca4da5e34567cf8",
-   	 "name": "Ruhul Ameen",
+     ```
+        "_id": "5b656f7a9ca4da5e34567cf8",
+   	"name": "Ruhul Ameen",
     	"position": "Director",
-   	 "Office": "2nd Floor,VRM",
-   	 "email": "ameensunny242@gmail.com",
-   	 "phone_office": "0721-776666",
-   	 "phone_res": "90980988",
-   	 "mobile": "01521300804",
-   	 "Salary": "80K",
-   	 "NID": "883738383892902",
+   	"Office": "2nd Floor,VRM",
+   	"email": "ameensunny242@gmail.com",
+   	"phone_office": "0721-776666",
+   	"phone_res": "90980988",
+   	"mobile": "01521300804",
+   	"Salary": "80K",
+   	"NID": "883738383892902",
     	"dateOfJoin": "11 Nov, 2000",
     	"__v": 0
 	
+      ```
  
 * **Error Response:**
 
@@ -781,9 +783,11 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 * **Success Response:**
 
   * **Code:** 201 <br />
-    **Content:** `
-    { 
-       {
+    **Content:** 
+
+
+      ```
+
     	 "_id": "5b6575289ca4da5e34567cf9",
     	"name": "Kakon Mehedi",
     	"position": "Executive Officer",
@@ -796,9 +800,8 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
     	"NID": "77765646437383",
     	"dateOfJoin": "05 Dec, 2005",
     	"__v": 0
-       }
-    
-    }`
+
+     ```
 
   * **Error Response:**
 
@@ -847,10 +850,11 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 * **Success Response:**
 
   * **Code:** 202 <br />
-    **Content:** `
-    { 
-       {
-    	 "_id": "5b6575289ca4da5e34567cf9",
+    **Content:** 
+
+
+       ```
+    	"_id": "5b6575289ca4da5e34567cf9",
     	"name": "Kakon Mehedi",
     	"position": "Executive Officer",
     	"Office": "1st Floor,VRM",
@@ -862,9 +866,8 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
     	"NID": "77765646437383",
     	"dateOfJoin": "05 Dec, 2005",
     	"__v": 0
-       }
-    
-    }`
+        
+       ```
 
     * **Error Response:**
 
@@ -954,12 +957,10 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 
   * **Code:** 200 <br />
     **Content:**
-    {  
-      
-    {
+     
+     ```
 
     "_id": "5b655735af65a50b98c79a18",
-    
     "product_name":"palmurti",
     "product_no":"01",
     "product_type":"murti",
@@ -967,14 +968,9 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
     "origin_address":"natore",
     "origin_mobile_no":"01725647764",
     "product_background":"natore_museum",
-    "submission_date":"07.10.17"
-
-
-    
-    }
-
-    }
-
+    "submission_date":"07.10.17
+   
+    ```
 	
  
 * **Error Response:**
@@ -1024,12 +1020,10 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 
   * **Code:** 201 <br />
     **Content:** `
-    {
-    	 
-    {
+   
+    ```
 
     "_id": "5b655735af65a50b98c79a18",
-    
     "product_name":"palmurti",
     "product_no":"01",
     "product_type":"murti",
@@ -1038,13 +1032,8 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
     "origin_mobile_no":"01725647764",
     "product_background":"natore_museum",
     "submission_date":"07.10.17"
-
-
-
-    }
-
-	
-    }`
+    
+    ```
 
   * **Error Response:**
 
@@ -1094,14 +1083,10 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
 
   * **Code:** 202 <br />
     **Content:** `
-    { 
-     
-    {
-
     
+    ```
 
     "_id": "5b655735af65a50b98c79a18",
-    
     "product_name":"palmurti",
     "product_no":"01",
     "product_type":"murti",
@@ -1110,15 +1095,8 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
     "origin_mobile_no":"01725647764",
     "product_background":"natore_museum",
     "submission_date":"07.10.17"
-
-
     
-    }
-
-	
-
-    
-    }`
+    ```
 
     * **Error Response:**
 
@@ -1183,6 +1161,175 @@ This is a API of the Museums of University of Rajshahi.This API can be accessed 
       }
     });
   ```
+
+# Test Cases
+
+## List of Museums
+
+```
+{
+    "name":"Varentra Research Museum",
+    "address":Serushar Para, College Road, Boalia,Rajshahi"
+}
+```    
+
+```
+{
+    "name":"Shaheed Smriti Songrohoshala",
+    "address":"Admin Building, University of Rajshahi, Dr Zoha Cir, Rajshahi"
+}
+```
+
+
+```
+{
+    "name":"Mustafizur Rahman Memorial Museum",
+    "address":"Department of Zoology"
+}
+```
+
+## List of Collections in the Museums
+
+
+```
+{ 
+    "product_name":"palmurti",
+    "product_no":"01",
+    "product_type":"murti",
+    "product_origin":"md araf",
+    "origin_address":"natore",
+    "origin_mobile_no":"01725647764",
+    "product_background":"natore_museum",
+    "submission_date":"07.10.17"
+}
+```
+
+```
+{ 
+    "product_name":"antique_coin",
+    "product_no":"02",
+    "product_type":"coin",
+    "product_origin":"md salam",
+    "origin_address":"bogra",
+    "origin_mobile_no":"01725647783",
+    "product_background":"bogra_museum",
+    "submission_date":"07.10.17"
+}
+```
+
+```
+{ 
+    "product_name":"mughol_dresses",
+    "product_no":"03",
+    "product_type":"dress",
+    "product_origin":"md sharif",
+    "origin_address":"bagerhaat",
+    "origin_mobile_no":"01765647755",
+    "product_background":"bagerhaat_museum",
+    "submission_date":"07.10.17"
+}
+```
+
+```
+{
+    "official_name":"Varendra Research Museum ",
+    "established": "1910",
+    established_by: “Kumar Sarat Kumar Ray ",
+    "architect":"L.S. Charmaichel ",
+    "area":"20 acr",
+    "notable_collections":"Puthis of Ancient time",
+    "about":"largest museum of Bangladesh",
+}
+```
+
+## The Schedule of Every Museum
+
+```
+{  
+  "address":"Jadugor Mor,Rajshahi"
+    "open_time":"10.00am",
+    "lunch_break":"1.30pm-2.30pm",
+    "closed_time":"5.00pm",
+	"visiting_days":"Sunday,Monday,Wednesday,Tuesday,Thursday",
+    "upcoming_events":"Edul Azha",
+    "upcoming_events_date":"23 August",
+    "upcoming_workshop":"Know history,Create history".
+    "upcoming_workshop_date":"10-09-2018"
+    "ticket_price":"10 TK"
+}
+```
+
+```
+{
+    "address":"Shahid Miner,University of Rajshahi"
+    "open_time":"9.00am",
+    "lunch_break":"1.00pm-2.00pm",
+    "closed_time":"5.00pm",
+	"visiting_days":"Sunday,Monday,Wednesday,Tuesday,Thursday",
+    "upcoming_events":"Mourning Day",
+    "upcoming_events_date":"15 August",
+    "upcoming_workshop":"Know about Freedom Fight".
+    "upcoming_workshop_date":"17-09-2018"
+    "ticket_price":"Free"
+}
+```
+
+```
+{ 
+
+    "address":"Department of Zoology,University of Rajshahi"
+    "open_time":"9.00am",
+    "lunch_break":"1.00pm-2.00pm",
+    "closed_time":"5.00pm",
+	"visiting_days":"Sunday,Monday,Wednesday,Tuesday,Thursday",
+    "upcoming_events":"World Animal Day",
+    "upcoming_events_date":"4th October",
+    "upcoming_workshop":"Love for animal,Love for life".
+    "upcoming_workshop_date":"06-10-2018"
+    "ticket_price":"Free"
+
+}
+```
+
+
+## The List of Officers of Every Museum
+
+```
+{
+    "name": "Kakon Mehedi",
+    "position": "Executive Officer",
+    "Office": "1st Floor,VRM",
+    "email": "mehedidhkakon@gmail.com",
+    "phone_office": "0721-779911",
+    "phone_res": "909988988",
+    "mobile": "01716482871",
+    "Salary": "50K",
+    "NID": "77765646437383",
+    "dateOfJoin": "05 Dec, 2005"
+}
+```
+
+
+```
+{
+    "name": "Shahriar Rahi",
+    "position": "Convention Officer",
+    "Office": "3rd Floor,VRM",
+    "email": "sherlockrahi@gmail.com",
+    "phone_office": "0721-739311",
+    "phone_res": "909988988",
+    "mobile": "0178482881",
+    "Salary": "40K",
+    "NID": "7744556637383",
+    "dateOfJoin": "02 April, 2002"
+}
+```
+
+
+
+
+
+
 
 # Contributer:
 This API is developed by  4 students of department Computer Science and Engineering,University of Rajshahi.

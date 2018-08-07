@@ -5,8 +5,14 @@ var mongoose = restful.mongoose;
 
 // Schema
 var collectionSchema = new mongoose.Schema({
-    name: String,
-    adress: String,
+    product_name:String,
+    product_no:String,
+    product_type:String,
+    product_origin:String,
+    origin_address:String,
+    origin_mobile_no:String,
+    product_background:String,
+    submission_date:String
     
 
 });
